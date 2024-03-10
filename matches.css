@@ -1,0 +1,132 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.content-container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #fdfdfd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    margin: auto;
+    border-radius: 2%;
+
+}
+
+.header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px 0;
+}
+
+.logo img {
+    max-height: 50px;
+    float: left;
+    margin-left: 20px;
+
+}
+
+.navbar-container {
+    max-width: 100%;
+    width: 500px;
+    margin: 0 auto;
+    background-color: none;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    padding: auto;
+
+}
+
+
+.navbar a {
+    text-decoration: none;
+    color: #242833;
+    margin: 15px 15px;
+    font-weight: bold;
+    font-size: 25px;
+    transition: color 0.3s ease-in-out;
+
+}
+
+
+.navbar a:hover {
+    color: #FCBF00	;
+
+}
+
+.section {
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.section h1 {
+    color: #007BFF;
+    font-size: 36px;
+}
+
+.section p {
+    color: #555;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    background-color: #242833;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    height: 2.5rem;
+    width: 100%;
+    flex: 1;
+
+}
+
+.footer p {
+    font-size: 14px;
+
+}
+
+
+.match-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer; /* Add cursor style for better indication */
+    display: block; /* Make the anchor a block-level element */
+    text-decoration: none;
+    color: inherit; /* Inherit text color from parent */
+}
+
+.match-item:hover {
+    transform: translateY(-5px);
+}
+
+.match-item h3,
+.match-item p {
+    margin: 0;
+}
+
+.match-item h3 a,
+.match-item p a {
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
