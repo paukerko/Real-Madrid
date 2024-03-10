@@ -55,14 +55,26 @@ html{
     margin: 15px 15px;
     font-weight: bold;
     font-size: 25px;
-    transition: color 0.3s ease-in-out;
+    position: relative;
+
 
 }
 
-.navbar a:hover {
-    color: #FCBF00	;
-
-}
+a::before {
+    background: hsl(45 100% 70%);
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s ease-in-out;
+    z-index: -1;
+  }
+  
+  a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 
 
 .footer {
@@ -108,7 +120,6 @@ html{
     text-transform: uppercase;
     letter-spacing: 1px;
     text-align: left;
-    text-shadow: 1px 1px 5px black;
 }
 
 .star-players p {
@@ -125,10 +136,6 @@ html{
 
 }
 
-.player-item:hover{
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
-    transform: translateY(-5px);
-}
 
 .player-photo {
     width: 256px;
@@ -168,3 +175,93 @@ html{
 .aside a:hover {
     color: #fff;
 }
+
+.outer {
+    position: relative;
+    background: rgb(255, 255, 255);
+    width: 250px;
+    height: 250px;
+  }
+  
+  .outer figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .artist-title {
+    max-width: max-content;
+    display: inline-block;
+    margin: 6px;
+    text-align: center;
+    color: #000000;
+    font-size: 2em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+  /*   height: 170px;
+    width: 170px; */
+    transition: all .5s;
+    opacity: 1;
+    z-index: 1;
+  }
+  
+  .artist-title:hover {
+    margin: 0;
+    opacity: 0;
+    padding: 50px;
+  }
+  
+  .hover-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background: rgba(68, 68, 68, 0.7);
+    transition: all .4s;
+    opacity: 0;
+    z-index: 0;
+    padding: 30px;
+  }
+  
+  .artist-title:hover + .hover-details {
+    opacity: 1;
+  }
+  
+  .title-hover {
+    position: relative;
+    top: -10px;
+    opacity: 0;
+    transition: all 0.6s;
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 1.8em;
+  }
+  
+  
+  .hover-more-info {
+    position: relative;
+    top: -10px;
+    transition: all .7s;
+  }
+  
+  .artist-title:hover + .hover-details .title-hover {
+    top: 0px;
+    opacity: 1;
+  }
+  
+  .artist-title:hover + .hover-details .hover-more-info {
+    top: 0px;
+  }
+  
+  .artist-title:hover + .hover-details .hover-cta {
+    bottom: 0px;
+  }
