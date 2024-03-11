@@ -4,23 +4,13 @@ body {
     color: #333;
     margin: 0;
     padding: 0;
+  
 }
 
 html{
     scroll-behavior: smooth;
 }
 
-.content-container {
-    max-width: 900px;
-    width: 100%;
-    padding: 20px;
-    border: 1px solid #fdfdfd;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    margin: auto;
-    border-radius: 2%;
-
-}
 
 .header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -51,7 +41,7 @@ html{
 
 .navbar a {
     text-decoration: none;
-    color: #242833;
+    color: #36413E;
     margin: 15px 15px;
     font-weight: bold;
     font-size: 25px;
@@ -60,18 +50,18 @@ html{
 
 }
 
-a::before {
-    background: hsl(45 100% 70%);
+.navbar a::before {
+    background: #C1A05A;
     content: "";
     inset: 0;
     position: absolute;
     transform: scaleX(0);
     transform-origin: right;
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     z-index: -1;
   }
   
-  a:hover::before {
+  .navbar a:hover::before {
     transform: scaleX(1);
     transform-origin: left;
   }
@@ -100,8 +90,17 @@ a::before {
 
 .player-section-container{
     max-width: 1000px;
-    margin: auto;
+    margin: 50px auto 50px auto;
     text-align: center;
+    padding: 30px;
+    box-shadow: 0px 0px 2px  black;
+    border-radius: 20px;
+    
+    
+}
+
+.psc-h2{
+  text-align: left;
 }
 
 .player-h3{
@@ -166,9 +165,9 @@ a::before {
     top: 0;
     left: 0;
     margin-top: 115px;
-    background-color: #FCBF00;
+    background-color: #C1A05A;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    border-radius: 0 15px 15px 0;
     
 }
 
@@ -176,92 +175,68 @@ a::before {
     color: #fff;
 }
 
-.outer {
-    position: relative;
-    background: rgb(255, 255, 255);
-    width: 250px;
-    height: 250px;
-  }
-  
-  .outer figure img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-  
-  .artist-title {
-    max-width: max-content;
-    display: inline-block;
-    margin: 6px;
-    text-align: center;
-    color: #000000;
-    font-size: 2em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    top: 0;
-    bottom: 0;
-  /*   height: 170px;
-    width: 170px; */
-    transition: all .5s;
-    opacity: 1;
-    z-index: 1;
-  }
-  
-  .artist-title:hover {
-    margin: 0;
-    opacity: 0;
-    padding: 50px;
-  }
-  
-  .hover-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: #fff;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    text-align: center;
-    background: rgba(68, 68, 68, 0.7);
-    transition: all .4s;
-    opacity: 0;
-    z-index: 0;
-    padding: 30px;
-  }
-  
-  .artist-title:hover + .hover-details {
-    opacity: 1;
-  }
-  
-  .title-hover {
-    position: relative;
-    top: -10px;
-    opacity: 0;
-    transition: all 0.6s;
-    margin: 0;
-    margin-bottom: 5px;
-    font-size: 1.8em;
-  }
-  
-  
-  .hover-more-info {
-    position: relative;
-    top: -10px;
-    transition: all .7s;
-  }
-  
-  .artist-title:hover + .hover-details .title-hover {
-    top: 0px;
-    opacity: 1;
-  }
-  
-  .artist-title:hover + .hover-details .hover-more-info {
-    top: 0px;
-  }
-  
-  .artist-title:hover + .hover-details .hover-cta {
-    bottom: 0px;
-  }
+.player-item {
+  max-width: max-content;
+  display: inline-block;
+  margin: 6px;
+  background-color: #ffffff;
+  text-align: center;
+  overflow: hidden; /* Ensure any child content that overflows is hidden */
+  position: relative; /* Set a relative position for child absolute positioning */
+  cursor: pointer;
+}
+
+.player-photo {
+  width: 256px;
+  height: 278px;
+  object-fit: cover;
+  transition: transform .5s;
+}
+
+
+.hover-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 256px;
+  height: 278px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(54, 65, 62, 0.8);
+  transition: all .4s;
+  opacity: 0;
+  color: #fff;
+}
+
+.player-item:hover .hover-details {
+  opacity: 1;
+}
+
+.hover-details h3,
+.hover-details p {
+  margin: 0;
+}
+
+.hover-details li{
+
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 2px 10px;
+
+}
+
+.ul-hover{
+  text-align: left;
+  list-style-type: none;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.player-item a {
+  text-decoration: none; /* Remove default link underline */
+  color: inherit; /* Inherit text color */
+}

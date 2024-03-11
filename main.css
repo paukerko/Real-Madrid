@@ -56,15 +56,25 @@ html{
     margin: 15px 15px;
     font-weight: bold;
     font-size: 25px;
-    transition: color 0.3s ease-in-out;
+    position: relative;
 
 }
 
-
-.navbar a:hover {
-    color: #FCBF00	;
-
-}
+.navbar a::before {
+    background: #C1A05A;
+    content: "";
+    inset: 0;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-in-out;
+    z-index: -1;
+  }
+  
+  .navbar a:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
 
 .section {
     padding: 50px 0px;
