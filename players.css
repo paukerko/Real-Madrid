@@ -11,60 +11,55 @@ html{
     scroll-behavior: smooth;
 }
 
-
 .header {
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding: 10px 0;
-}
-
-.logo img {
-    max-height: 50px;
-    float: left;
-    margin-left: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px 0;
+  background-color: #242833;
 
 }
 
 .navbar-container {
-    max-width: 100%;
-    width: 500px;
-    margin: 0 auto;
-    background-color: none;
+  max-width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  
+  
 }
 
-
 .navbar {
-    display: flex;
-    justify-content: center;
-    padding: auto;
-
+  display: flex;
+  justify-content: center;
+  padding: 0; /* Reset padding */
 }
 
 .navbar a {
-    text-decoration: none;
-    color: #36413E;
-    margin: 15px 15px;
-    font-weight: bold;
-    font-size: 25px;
-    position: relative;
-
-
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: white;
+  position: relative;
 }
 
-.navbar a::before {
-    background: #C1A05A;
-    content: "";
-    inset: 0;
-    position: absolute;
-    transform: scaleX(0);
-    transform-origin: right;
-    transition: transform 0.3s ease-in-out;
-    z-index: -1;
-  }
-  
-  .navbar a:hover::before {
-    transform: scaleX(1);
-    transform-origin: left;
-  }
+.navbar a:hover:after {
+  bottom: -5px;
+  opacity: 1;
+  border-color: #C1A05A;
+}
+
+.navbar a:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+  border-bottom: 2px solid white;
+  background: white;
+  bottom: -20px;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.navbar a + a {
+  margin-left: 2rem;
+}
 
 
 .footer {
@@ -96,8 +91,7 @@ html{
     padding: 30px;
     box-shadow: 0px 0px 2px  black;
     border-radius: 20px;
-    
-    
+       
 }
 
 .psc-h2{
@@ -108,12 +102,12 @@ html{
     border-top: dotted 2px #242833;
     padding: 15px;
     text-align: right;
-    font-size: 25px;
+    font-size: 15px;
     
 }
 
 .player-nadpis {
-    color: #FCBF00;
+    color: #C1A05A;
     font-size: 32px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -122,85 +116,35 @@ html{
     text-align: left;
 }
 
-.star-players p {
-    color: #555;
-    font-size: 20px;
-}
-
-.player-item{
-    max-width: max-content;
-    display: inline-block;
-    margin: 6px;
-    background-color: #ffffff;
-    text-align: center;
-
-}
-
-
-.player-photo {
-    width: 256px;
-    height: 278px;
-    object-fit: cover;
-}
-
-/* ASIDE LINKS */
-.li-scroll{
-
-    font-size: 20px;
-    line-height: 30px;
-    text-decoration: none;
-    color: #242833;
-    padding: 2px 10px;
-
-}
-
-.ul-scroll{
-
-    list-style-type: none;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.aside{
-    position: fixed;
-    top: 0;
-    left: 0;
-    margin-top: 115px;
-    background-color: #C1A05A;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 0 15px 15px 0;
-    
-}
-
-.aside a:hover {
-    color: #fff;
-}
 
 .player-item {
-  max-width: max-content;
+  max-width: 170px;
   display: inline-block;
   margin: 6px;
   background-color: #ffffff;
   text-align: center;
-  overflow: hidden; /* Ensure any child content that overflows is hidden */
+  overflow-wrap: break-word; /* Ensure any child content that overflows is hidden */
   position: relative; /* Set a relative position for child absolute positioning */
   cursor: pointer;
+  
 }
 
 .player-photo {
-  width: 256px;
-  height: 278px;
+  width: 156px;
+  height: 178px;
   object-fit: cover;
   transition: transform .5s;
 }
 
 
+/* Hover */
+
 .hover-details {
   position: absolute;
   top: 0;
   left: 0;
-  width: 256px;
-  height: 278px;
+  width: 156px;
+  height: 178px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -222,8 +166,8 @@ html{
 
 .hover-details li{
 
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 15px;
+  line-height: 20px;
   text-decoration: none;
   color: #ffffff;
   padding: 2px 10px;
@@ -233,11 +177,46 @@ html{
 .ul-hover{
   text-align: left;
   list-style-type: none;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.player-item a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 10px;
+  overflow: break-word;
+}
+
+/* ASIDE LINKS */
+.li-scroll{
+
+  font-size: 20px;
+  line-height: 30px;
+  text-decoration: none;
+  color: #242833;
+  padding: 2px 10px;
+
+}
+
+.ul-scroll{
+
+  list-style-type: none;
   padding-left: 15px;
   padding-right: 15px;
 }
 
-.player-item a {
-  text-decoration: none; /* Remove default link underline */
-  color: inherit; /* Inherit text color */
+.aside{
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin-top: 115px;
+  background-color: #C1A05A;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 0 15px 15px 0;
+  
+}
+
+.aside a:hover {
+  color: #fff;
 }

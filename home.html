@@ -7,20 +7,12 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    
-   
-    <header class="header">
-        
-        <div class="logo">
-            <a href="home.html">
-                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/320px-Real_Madrid_CF.svg.png" alt="Logo">
-            </a>
-        </div>
-        <div class="centered-text">
-            <p>¡HALA MADRID!</p>
-        </div>
-        
-    </header>
+
+
+    <div class="top-bar">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/320px-Real_Madrid_CF.svg.png" alt="Logo" class="logo">
+        <p>¡HALA MADRID!</p>
+    </div>
 
     <section class="section">
 
@@ -31,9 +23,19 @@
                 
                     <div class="grid-item" ></div>
                
-                    <div class="grid-item" onclick="window.location.href='players.html';"></div>
+                    <div class="grid-item" onclick="window.location.href='players.html';">
+                    
+                        <a href="players.html">
+                            <span class="grid-item-text">Squad</span>
+                        </a>
+                    </div>
               
-                    <div class="grid-item" onclick="window.location.href='matches.html';"></div>
+                    <div class="grid-item" onclick="window.location.href='matches.html';">
+                    
+                        <a href="matches.html">
+                            <span class="grid-item-text">Fixtures</span>
+                        </a>
+                    </div>
 
                     <div class="grid-item"></div>
 
