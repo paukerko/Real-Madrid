@@ -21,12 +21,13 @@ body {
   }
 
 .top-bar {
-    background-color: #242833; /* Blue background color */
+    background-color: none; 
     color: #ffffff; /* White text color */
     padding: 0; /* Padding for the content inside the top bar */
     text-align: center; /* Center align the content */
     height: 60px; /* Adjusted height */
-    position: relative; /* Positioning context for the logo */
+    position: relative;
+    
   }
   
   /* CSS for the logo */
@@ -35,16 +36,27 @@ body {
     top: 50%; /* Move the logo down by 50% of the top bar's height */
     transform: translateY(-50%); /* Center the logo vertically */
     left: 50px; /* Adjusted position to the right */
-    height: 40px; /* Adjusted height */
+    height: 50px; /* Adjusted height */
   }
    
 
   /* CSS for the text */
-  p {
-    font-size: 20px; /* Adjusted font size */
+  #nadpis {
+    font-size: 40px; /* Adjusted font size */
     line-height: 60px; /* Centering vertically */
     margin: 0;
+    color: #525252;
+
   }
+
+
+p {
+  font-size: 40px; /* Adjusted font size */
+  line-height: 60px; /* Centering vertically */
+  margin: 0;
+  color: #525252;
+
+}
 
 .section {
     padding: 10px 0px;
@@ -56,116 +68,72 @@ body {
 }
 
 
-.section p {
-    color: #555;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 250px); 
-    grid-template-rows: repeat(1, 250px);
-    gap: 10px;
-    justify-content: center;
-    
+  display: grid;
+  grid-template-columns: repeat(4, 200px); 
+  grid-template-rows: 1fr;
+  gap: 30px;
+  justify-content: center;
 }
 
 .grid-item {
-    position: relative;   
-    padding: 20px;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: transform 0.3s ease;
-    overflow: hidden;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px black;
-    
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0);
+  filter: grayscale(100%);
+  transition: transform 0.5s ease;
+  
 }
 
-/* Apply blur effect to background images */
-.grid-item:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-}
-
-
-.grid-item:hover {
-    transform: scale(1.1);    
-    cursor: pointer;
-    filter: none;
-    
+.grid-item:hover{
+  transform: scale(1.15);
+  filter: none;
+  
 }
 
 .grid-item-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: center;
-    background-color: rgba(193, 160, 90, 1);
-    padding: 10px;
-    transition: opacity 0.3s ease;
-    width: auto;
-    border-radius: 50px;
-    z-index: 2; /* Ensure text overlays are above blurred images */
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #C1A05A;
+  font-size: 23px;
+  font-weight: bold;
+  opacity: 0;
+  transition: opacity 0.3s ease, bottom 0.5s ease;
+  text-transform: uppercase;
 }
 
-/* Show text overlay on hover */
 .grid-item:hover .grid-item-text {
-    opacity: 1;
-
+  opacity: 1;
+  bottom: -20%;
 }
 
-/* Apply different background images to each grid item */
-.grid-item:nth-child(1) {
-    background-image: url(/IMG/history.jpeg);
-    background-position: left;
-}
-
-.grid-item:nth-child(2) {
-    background-image: url(/IMG/squad.jpeg);
-    background-position: center;
-}
-
-.grid-item:nth-child(3) {
-    background-image: url(/IMG/stad.jpg);
-    background-position: center;
-}
-
-.grid-item:nth-child(4) {
-    background-image: url(/IMG/shop.jpeg);
-}
 
 .footer {
-    bottom: 0;
-    justify-content: center;
-    background-color: #242833;
-    color: #fff;
-    text-align: center;
-    padding: 5px 0;
-    height: 2.5rem;
-    width: 100%;
-    flex: 1;
-    margin-top: auto;
-    display: flex;
-    align-items: center;
-
+  bottom: 0;
+  justify-content: center;
+  background-color: none;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  height: 2.5rem;
+  width: 100%;
+  flex: 1;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
 }
 
 .footer p {
-    font-size: 14px;
+  font-size: 14px;
 }
-
