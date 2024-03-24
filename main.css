@@ -42,17 +42,17 @@ body {
 
   /* CSS for the text */
   #nadpis {
-    font-size: 40px; /* Adjusted font size */
+    font-size: 50px; /* Adjusted font size */
     line-height: 60px; /* Centering vertically */
     margin: 0;
-    color: #525252;
+    color: #C1A05A;
 
   }
 
 
 p {
-  font-size: 40px; /* Adjusted font size */
-  line-height: 60px; /* Centering vertically */
+  font-size: 20px; /* Adjusted font size */
+  line-height: 10px; /* Centering vertically */
   margin: 0;
   color: #525252;
 
