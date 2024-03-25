@@ -21,33 +21,27 @@ body {
   }
 
 .top-bar {
-    background-color: none; 
-    color: #ffffff; /* White text color */
-    padding: 0; /* Padding for the content inside the top bar */
+    padding-bottom: 5px; /* Padding for the content inside the top bar */
     text-align: center; /* Center align the content */
     height: 60px; /* Adjusted height */
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
   }
   
-  /* CSS for the logo */
-.logo {
-    position: absolute; /* Position the logo relative to the top bar */
-    top: 50%; /* Move the logo down by 50% of the top bar's height */
-    transform: translateY(-50%); /* Center the logo vertically */
-    left: 50px; /* Adjusted position to the right */
-    height: 50px; /* Adjusted height */
-  }
-   
 
-  /* CSS for the text */
-  #nadpis {
-    font-size: 50px; /* Adjusted font size */
-    line-height: 60px; /* Centering vertically */
+#nadpis {
+    font-size: 50px; 
+    line-height: 60px; 
     margin: 0;
     color: #C1A05A;
-
+    text-shadow: 0px 1px 1px #333;
+    width: fit-content;
+    
   }
+
+  
 
 
 p {
@@ -64,7 +58,9 @@ p {
     justify-content: center;
     display: flex;
     align-items: center;
+    position: relative;
     overflow: hidden;
+
 }
 
 
@@ -88,7 +84,7 @@ p {
   align-items: center;
   justify-content: center;
   text-decoration: none;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0);
+  box-shadow: 0px 0px 5px rgba(0, 0, 0);
   filter: grayscale(100%);
   transition: transform 0.5s ease;
   
@@ -111,11 +107,13 @@ p {
   opacity: 0;
   transition: opacity 0.3s ease, bottom 0.5s ease;
   text-transform: uppercase;
+  text-shadow: 0px 1px 1px #333;
 }
 
 .grid-item:hover .grid-item-text {
   opacity: 1;
   bottom: -20%;
+  text-shadow: 0px 1px 1px #333;
 }
 
 
