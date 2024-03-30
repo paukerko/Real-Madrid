@@ -66,6 +66,45 @@ html {
   margin-left: 2rem;
 }
 
+.section {
+  width: 65%;
+  margin: 50px auto 50px auto;
+  text-align: left;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-left {
+  float: left;
+  margin-right: 20px;
+  max-width: 30%;
+  height: auto;
+  border: 4px solid #c1a05a;
+}
+
+.image-right {
+  float: right;
+  margin-left: 10px;
+  max-width: 30%;
+  height: auto;
+  border: 4px solid #c1a05a;
+}
+
+.part-section {
+  border-bottom: 1px solid #242833;
+}
+
+.part-section p {
+  font-size: 20px;
+  margin-top: 0;
+}
+
+.part-section h2 {
+  font-size: 30px;
+}
+
 .footer {
   display: flex;
   justify-content: center;
