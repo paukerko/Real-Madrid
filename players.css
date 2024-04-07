@@ -42,6 +42,7 @@ html {
   font-size: 1.5rem;
   color: white;
   position: relative;
+  margin-right: 25px;
 }
 
 .navbar a:hover:after {
@@ -117,8 +118,8 @@ html {
   position: absolute;
   top: 0;
   left: 0;
-  width: 156px;
-  height: 178px;
+  width: 176px;
+  height: 198px;
   display: flex;
   flex-direction: column;
   justify-content: center;
