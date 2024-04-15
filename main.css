@@ -148,7 +148,16 @@ p {
     transition: none;
   }
 
+  .grid-item:hover {
+    transform: scale(0);
+    filter: none;
+  }
+
   #nadpis {
     font-size: 35px;
+  }
+
+  .footer p {
+    font-size: 7px;
   }
 }
