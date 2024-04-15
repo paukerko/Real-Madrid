@@ -138,12 +138,13 @@ p {
     margin-bottom: 30px; /* Add some spacing between grid items */
     filter: grayscale(0%);
     transition: none;
+    transform: none;
   }
 
   .grid-item-text {
     font-size: 16px; /* Decrease font size for grid item text */
     bottom: -25%; /* Adjust position of text */
-    opacity: 1;
+    opacity: 2;
     transition: none;
   }
 
