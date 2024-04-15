@@ -137,15 +137,17 @@ p {
     height: 130px; /* Allow height to adjust */
     margin-bottom: 30px; /* Add some spacing between grid items */
     filter: grayscale(0%);
+    transition: none;
   }
 
   .grid-item-text {
     font-size: 16px; /* Decrease font size for grid item text */
     bottom: -25%; /* Adjust position of text */
     opacity: 1;
+    transition: none;
   }
 
   #nadpis {
-    font-size: 25px;
+    font-size: 35px;
   }
 }
