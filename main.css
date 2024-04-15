@@ -1,3 +1,22 @@
+@media only screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Adjust the grid to have 2 columns */
+    gap: 15px; /* Increase the gap between grid items */
+  }
+
+  .grid-item {
+    width: 100%; /* Make grid items occupy full width */
+    height: auto; /* Allow the height to adjust according to content */
+  }
+
+  .grid-item-text {
+    font-size: 18px; /* Decrease font size for grid item text */
+  }
+}
+
 body {
   font-family: "Gill Sans", sans-serif;
   background-color: #fff;
