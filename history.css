@@ -34,7 +34,7 @@ html {
 .navbar {
   display: flex;
   justify-content: center;
-  padding: 0; /* Reset padding */
+  padding: 0px; /* Reset padding */
 }
 
 .navbar a {
@@ -110,7 +110,7 @@ html {
   background-color: #c1a05a;
   max-width: fit-content;
   display: flex;
-  margin: 0 auto;
+  margin: 20px auto;
   list-style-type: none;
   padding: 10px;
   margin-bottom: 50px;
@@ -145,4 +145,43 @@ html {
 
 .footer p {
   font-size: 14px;
+}
+
+@media only screen and (max-width: 760px) {
+  .section {
+    width: 80%;
+    margin: 50px auto 10px auto;
+    text-align: left;
+    padding: 5px;
+  }
+
+  .image-left,
+  .image-right {
+    display: none;
+  }
+
+  .image-left-media {
+    float: left;
+    max-width: 70%;
+    margin-bottom: 10px;
+    height: auto;
+    border: 4px solid #c1a05a;
+  }
+
+  .part-section p {
+    font-size: 15px;
+    margin-top: 0;
+  }
+
+  .part-section h2 {
+    font-size: 20px;
+  }
+
+  .footer p {
+    font-size: 10px;
+  }
+
+  .navbar-container {
+    display: none;
+  }
 }
