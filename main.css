@@ -1,10 +1,24 @@
 body {
   font-family: "Gill Sans", sans-serif;
-  background-color: #fff;
   color: #333;
   margin: 0;
   padding: 0;
   height: 100%;
+}
+
+.background-image {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+
+  background-position-y: 100%;
+  z-index: -1;
+  filter: brightness(40%);
 }
 
 .wrapper {
@@ -19,52 +33,65 @@ html {
   height: 100%;
 }
 
-.top-bar {
-  padding-bottom: 5px; /* Padding for the content inside the top bar */
+.effect {
+  width: fit-content;
+}
+
+.logo {
   text-align: center; /* Center align the content */
-  height: 60px; /* Adjusted height */
-  display: flex;
   justify-content: center;
-  align-items: center;
+  width: fit-content;
+}
+
+.img-logo {
+  width: 90px;
+  height: 125px;
+  margin-top: 30px;
+}
+
+.real {
+  width: fit-content;
+}
+
+.madrid {
+  width: fit-content;
 }
 
 #nadpis {
-  font-size: 50px;
+  font-size: 30px;
   line-height: 60px;
   margin: 0;
-  color: #c1a05a;
-  text-shadow: 0 2px 1px rgba(36, 40, 51, 1);
+  color: #fff;
+  text-shadow: 0 2px 1px rgba(193, 160, 90, 0);
   width: fit-content;
 }
 
 p {
   font-size: 20px; /* Adjusted font size */
-  line-height: 10px; /* Centering vertically */
+  line-height: 20px; /* Centering vertically */
   margin: 0;
-  color: #525252;
+  color: #fff;
 }
 
 .section {
-  padding: 10px 0px;
   text-align: center;
   justify-content: center;
   display: flex;
   align-items: center;
   position: relative;
-  overflow: hidden;
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(4, 230px);
   grid-template-rows: 1fr;
-  gap: 30px;
   justify-content: center;
+  gap: 25px;
 }
 
 .grid-item {
-  width: 200px;
-  height: 200px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   background-size: cover;
   background-position: center;
@@ -80,7 +107,7 @@ p {
 }
 
 .grid-item:hover {
-  transform: scale(1.15);
+  transform: scale(1.05);
   filter: none;
 }
 
@@ -90,7 +117,7 @@ p {
   left: 50%;
   transform: translateX(-50%);
   color: #c1a05a;
-  font-size: 23px;
+  font-size: 30px;
   font-weight: bold;
   opacity: 0;
   transition: opacity 0.3s ease, bottom 0.5s ease;
@@ -108,7 +135,7 @@ p {
   bottom: 0;
   justify-content: center;
   background-color: none;
-  color: #fff;
+  color: #ffffff;
   text-align: center;
   padding: 5px 0;
   height: 2.5rem;
@@ -127,6 +154,7 @@ p {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
+    background-color: transparent;
   }
 
   .grid-item {
@@ -152,7 +180,7 @@ p {
   }
 
   #nadpis {
-    font-size: 35px;
+    font-size: 25px;
   }
 
   .grid-item:hover {
