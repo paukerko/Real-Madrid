@@ -155,6 +155,7 @@ p {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
     background-color: transparent;
+    justify-content: center;
   }
 
   .grid-item {
@@ -170,6 +171,12 @@ p {
     text-decoration: none;
   }
 
+  .grid-item:hover {
+    /* Remove hover */
+    transform: none;
+    filter: grayscale(0%);
+  }
+
   .grid-item-text {
     bottom: -20%;
     left: 50%;
@@ -181,20 +188,15 @@ p {
     transition: none;
     text-transform: uppercase;
     text-shadow: 0px 1px 1px #333;
+    position: absolute;
   }
 
   #nadpis {
     font-size: 25px;
   }
 
-  .grid-item:hover {
-    /* Remove hover */
-    transform: none;
-    filter: grayscale(0%);
-  }
-
   .grid-item:hover .grid-item-text {
-    opacity: 0;
+    opacity: 1;
     text-shadow: 0px 1px 1px #333;
     bottom: -20%;
   }
