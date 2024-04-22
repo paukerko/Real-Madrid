@@ -204,3 +204,50 @@ html {
 .footer p {
   font-size: 14px;
 }
+
+@media only screen and (max-width: 760px) {
+  .player-nadpis {
+    color: #c1a05a;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    text-shadow: 0 2px 1px rgba(36, 40, 51, 1);
+  }
+
+  .aside {
+    display: none;
+  }
+
+  .navbar-container {
+    display: none;
+  }
+
+  .hover-details {
+    display: none;
+  }
+
+  .player-item {
+    max-width: 170px;
+    display: inline-block;
+    margin: 6px;
+    background-color: #ffffff;
+    text-align: center;
+    overflow-wrap: break-word; /* Ensure any child content that overflows is hidden */
+    position: relative; /* Set a relative position for child absolute positioning */
+    cursor: pointer;
+  }
+
+  .player-photo {
+    width: 156px;
+    height: 178px;
+    object-fit: cover;
+    transition: none;
+  }
+
+  .footer p {
+    font-size: 7px;
+  }
+}

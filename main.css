@@ -106,6 +106,10 @@ p {
   text-shadow: 0px 1px 1px #333;
 }
 
+.grid-item-text-media {
+  display: none;
+}
+
 .grid-item:hover .grid-item-text {
   opacity: 1;
   bottom: -20%;
@@ -168,7 +172,7 @@ p {
     color: #c1a05a;
     font-weight: bold;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 15px;
     margin-top: 170px;
   }
 
