@@ -154,51 +154,46 @@ p {
   .grid-container {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    background-color: transparent;
     justify-content: center;
+    display: grid;
   }
 
   .grid-item {
     width: 130px;
     height: 130px;
-    margin-bottom: 30px; /* Add some spacing between grid items */
-    filter: grayscale(0%);
-    transition: none;
-    transform: none;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    margin-bottom: 30px; /* Add some spacing between grid items */
+    filter: grayscale(0%);
+    transform: none;
   }
 
   .grid-item:hover {
-    /* Remove hover */
     transform: none;
-    filter: grayscale(0%);
+    filter: none;
   }
 
   .grid-item-text {
-    bottom: -20%;
-    left: 50%;
-    transform: translateX(-50%);
+    display: none;
+  }
+
+  .grid-item-text-media {
     color: #c1a05a;
-    font-size: 20px;
     font-weight: bold;
-    opacity: 1;
-    transition: none;
     text-transform: uppercase;
-    text-shadow: 0px 1px 1px #333;
+    font-size: 20px;
     position: absolute;
+    bottom: -25%;
   }
 
   #nadpis {
     font-size: 25px;
-  }
-
-  .grid-item:hover .grid-item-text {
-    opacity: 1;
-    text-shadow: 0px 1px 1px #333;
-    bottom: -20%;
   }
 
   .footer p {
