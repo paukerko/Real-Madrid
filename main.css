@@ -169,6 +169,7 @@ p {
     font-weight: bold;
     text-transform: uppercase;
     font-size: 20px;
+    bottom: 20px;
   }
 
   .grid-item:hover .grid-item-text {
