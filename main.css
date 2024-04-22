@@ -164,9 +164,14 @@ p {
     filter: grayscale(0%);
     transition: none;
     transform: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
   }
 
   .grid-item-text {
+    bottom: -20%;
     left: 50%;
     transform: translateX(-50%);
     color: #c1a05a;
