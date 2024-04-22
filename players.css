@@ -1,5 +1,5 @@
 body {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #fff;
   color: #333;
   margin: 0;
@@ -207,9 +207,9 @@ html {
 
 @media only screen and (max-width: 760px) {
   .player-nadpis {
-    color: #c1a05a;
+    color: #242833;
     font-size: 30px;
-    font-weight: bold;
+    font-weight: bolder;
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
