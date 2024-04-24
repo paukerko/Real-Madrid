@@ -43,6 +43,7 @@ html {
   color: white;
   position: relative;
   margin-right: 30px;
+  text-transform: uppercase;
 }
 
 .navbar a:hover:after {

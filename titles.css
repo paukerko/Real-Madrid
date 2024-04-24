@@ -42,6 +42,8 @@ html {
   font-size: 1.5rem;
   color: white;
   position: relative;
+  margin-right: 30px;
+  text-transform: uppercase;
 }
 
 .navbar a:hover:after {
