@@ -1,6 +1,6 @@
 body {
   font-family: "Poppins", sans-serif;
-  background-color: #f9f9f9;
+  background-color: #fff;
   color: #333;
   margin: 0;
   padding: 0;
@@ -66,4 +66,60 @@ html {
 
 .navbar a + a {
   margin-left: 2rem;
+}
+
+.section {
+  width: 65%;
+  margin: 50px auto 10px auto;
+  text-align: center;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #193fa5;
+}
+
+.part-section {
+  border-bottom: 1px solid #242833;
+  display: flex;
+  align-items: center;
+}
+
+.image-left {
+  margin-right: 20px;
+  margin-bottom: 20px;
+  max-width: 15%;
+  height: auto;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.number-titles {
+  text-align: center;
+  margin-top: 0;
+  font-weight: lighter;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 20px;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+.table-head {
+  display: none;
 }
