@@ -19,55 +19,6 @@ html {
   height: 100%;
 }
 
-.header {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  padding: 10px 0;
-  background-color: #242833;
-}
-
-.navbar-container {
-  max-width: 300px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  padding: 0px; /* Reset padding */
-}
-
-.navbar a {
-  text-decoration: none;
-  font-size: 1.5rem;
-  color: white;
-  position: relative;
-  margin-right: 30px;
-  text-transform: uppercase;
-}
-
-.navbar a:hover:after {
-  bottom: -5px;
-  opacity: 1;
-  border-color: #c1a05a;
-}
-
-.navbar a:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  left: 0;
-  border-bottom: 2px solid white;
-  background: white;
-  bottom: -20px;
-  opacity: 0;
-  transition: 0.4s;
-}
-
-.navbar a + a {
-  margin-left: 2rem;
-}
-
 .section {
   width: 65%;
   margin: 50px auto 10px auto;
@@ -83,6 +34,7 @@ html {
   border-bottom: 1px solid #242833;
   display: flex;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .image-left {
@@ -103,6 +55,7 @@ h2 {
   text-align: center;
   margin-top: 0;
   font-weight: lighter;
+  font-size: 25px;
 }
 
 table {
