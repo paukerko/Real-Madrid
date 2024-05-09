@@ -4,19 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hala Madrid - Players</title>
-    <link rel="stylesheet" href="players.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="players.css" />
   </head>
   <body>
     <div class="wrapper">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+      <nav class="navbar navbar-expand-lg bg-transparent fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">#HalaMadrid</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -34,9 +33,7 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Offcanvas
-              </h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -45,41 +42,34 @@
               ></button>
             </div>
             <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <ul
+                class="navbar-nav justify-content-center flex-grow-1 text-uppercase fw-bold"
+              >
                 <li class="nav-item">
                   <a
                     class="nav-link active mx-lg-2"
                     aria-current="page"
-                    href="#"
+                    href="index.html"
                     >Home</a
                   >
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">Squad</a>
+                  <a class="nav-link mx-lg-2" href="players.html">Squad</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">Fixtures</a>
+                  <a class="nav-link mx-lg-2" href="matches.html">Fixtures</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">History</a>
+                  <a class="nav-link mx-lg-2" href="history.html">History</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link mx-lg-2" href="#">Titles</a>
+                  <a class="nav-link mx-lg-2" href="titles.html">Titles</a>
                 </li>
               </ul>
             </div>
           </div>
         </div>
       </nav>
-
-      <aside class="aside">
-        <ul class="ul-scroll">
-          <li><a class="li-scroll" href="#Goalkeepers">Goalkeepers</a></li>
-          <li><a class="li-scroll" href="#Defenders">Defenders</a></li>
-          <li><a class="li-scroll" href="#Midfielders">Midfielders</a></li>
-          <li><a class="li-scroll" href="#Attackers">Attackers</a></li>
-        </ul>
-      </aside>
 
       <section class="player-section-container">
         <h1 class="player-nadpis">Squad players</h1>
@@ -105,8 +95,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Thibaut Courtois</h3>
-              <p>Goalkeeper</p>
+              <h3 class="name">Thibaut Courtois</h3>
+              <p class="position">Goalkeeper</p>
             </a>
           </div>
 
@@ -128,8 +118,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Andriy Lunin</h3>
-              <p>Goalkeeper</p>
+              <h3 class="name">Andriy Lunin</h3>
+              <p class="position">Goalkeeper</p>
             </a>
           </div>
 
@@ -155,8 +145,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Éder Gabriel Militão</h3>
-              <p>Center-Back</p>
+              <h3 class="name">Éder Gabriel Militão</h3>
+              <p class="position">Center-Back</p>
             </a>
           </div>
 
@@ -175,8 +165,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>David Alaba</h3>
-              <p>Center-Back</p>
+              <h3 class="name">David Alaba</h3>
+              <p class="position">Center-Back</p>
             </a>
           </div>
 
@@ -198,8 +188,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Antonio Rudiger</h3>
-              <p>Center-Back</p>
+              <h3 class="name">Antonio Rudiger</h3>
+              <p class="position">Center-Back</p>
             </a>
           </div>
 
@@ -221,8 +211,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Nacho Fernandez</h3>
-              <p>Center-Back</p>
+              <h3 class="name">Nacho Fernandez</h3>
+              <p class="position">Center-Back</p>
             </a>
           </div>
 
@@ -244,8 +234,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Dani Carvajal</h3>
-              <p>Right-Back</p>
+              <h3 class="name">Dani Carvajal</h3>
+              <p class="position">Right-Back</p>
             </a>
           </div>
 
@@ -267,8 +257,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Lucas Vazquez</h3>
-              <p>Right-Back</p>
+              <h3 class="name">Lucas Vazquez</h3>
+              <p class="position">Right-Back</p>
             </a>
           </div>
 
@@ -290,8 +280,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Ferland Mendy</h3>
-              <p>Left-Back</p>
+              <h3 class="name">Ferland Mendy</h3>
+              <p class="position">Left-Back</p>
             </a>
           </div>
 
@@ -313,8 +303,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Fran Garcia</h3>
-              <p>Left-Back</p>
+              <h3 class="name">Fran Garcia</h3>
+              <p class="position">Left-Back</p>
             </a>
           </div>
 
@@ -340,8 +330,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Luka Modric</h3>
-              <p>Midfielder</p>
+              <h3 class="name">Luka Modric</h3>
+              <p class="position">Midfielder</p>
             </a>
           </div>
 
@@ -363,8 +353,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Federico Valverde</h3>
-              <p>Midfielder</p>
+              <h3 class="name">Federico Valverde</h3>
+              <p class="position">Midfielder</p>
             </a>
           </div>
 
@@ -386,8 +376,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Toni Kroos</h3>
-              <p>Midfielder</p>
+              <h3 class="name">Toni Kroos</h3>
+              <p class="position">Midfielder</p>
             </a>
           </div>
 
@@ -409,8 +399,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Dani Ceballos</h3>
-              <p>Midfielder</p>
+              <h3 class="name">Dani Ceballos</h3>
+              <p class="position">Midfielder</p>
             </a>
           </div>
 
@@ -432,8 +422,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Eduardo Camavinga</h3>
-              <p>Midfielder</p>
+              <h3 class="name">Eduardo Camavinga</h3>
+              <p class="position">Midfielder</p>
             </a>
           </div>
 
@@ -455,8 +445,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Aurélien Tchouaméni</h3>
-              <p>Midfielder</p>
+              <h3 class="name">Aurélien Tchouaméni</h3>
+              <p class="position">Midfielder</p>
             </a>
           </div>
 
@@ -478,8 +468,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Jude Bellingham</h3>
-              <p>Midfielder</p>
+              <h3 class="name">Jude Bellingham</h3>
+              <p class="position">Midfielder</p>
             </a>
           </div>
 
@@ -501,8 +491,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Arda Güler</h3>
-              <p>Midfielder</p>
+              <h3 class="name">Arda Güler</h3>
+              <p class="position">Midfielder</p>
             </a>
           </div>
 
@@ -524,8 +514,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Brahim Diaz</h3>
-              <p>Midfielder</p>
+              <h3 class="name">Brahim Diaz</h3>
+              <p class="position">Midfielder</p>
             </a>
           </div>
 
@@ -551,8 +541,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Rodrygo Goes</h3>
-              <p>Right Winger</p>
+              <h3 class="name">Rodrygo Goes</h3>
+              <p class="position">Right Winger</p>
             </a>
           </div>
 
@@ -574,8 +564,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Vinicius Junior</h3>
-              <p>Left Winger</p>
+              <h3 class="name">Vinicius Junior</h3>
+              <p class="position">Left Winger</p>
             </a>
           </div>
 
@@ -597,8 +587,8 @@
                 </ul>
                 <p>For more info click</p>
               </div>
-              <h3>Joselu</h3>
-              <p>Central Attacker</p>
+              <h3 class="name">Joselu Gasparovich</h3>
+              <p class="position">Central Attacker</p>
             </a>
           </div>
         </div>

@@ -23,7 +23,7 @@ html {
 
 .player-section-container {
   max-width: 1000px;
-  margin: 5px auto 25px auto;
+  margin: 50px auto 25px auto;
   text-align: center;
   padding: 30px;
 }
@@ -37,7 +37,7 @@ html {
 
 .player-nadpis {
   color: #c1a05a;
-  font-size: 32px;
+  font-size: 25px;
   font-weight: bold;
   margin-bottom: 10px;
   text-transform: uppercase;
@@ -62,6 +62,15 @@ html {
   height: 198px;
   object-fit: cover;
   transition: transform 0.5s;
+}
+
+.name {
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.position {
+  font-size: 15px;
 }
 
 /* Hover */
@@ -111,33 +120,6 @@ html {
   color: inherit;
   font-size: 10px;
   overflow: break-word;
-}
-
-/* ASIDE LINKS */
-.li-scroll {
-  font-size: 20px;
-  line-height: 30px;
-  text-decoration: none;
-  color: #242833;
-  padding: 2px 10px;
-}
-
-.ul-scroll {
-  list-style-type: none;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.aside {
-  position: fixed;
-  top: 40vh;
-  background-color: #c1a05a;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 0 15px 15px 0;
-}
-
-.aside a:hover {
-  color: #fff;
 }
 
 .footer {
